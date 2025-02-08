@@ -1,0 +1,40 @@
+let raceNumber = Math.floor(Math.random() * 1000);
+
+const racerOnTime = '0';
+const racerAge = 19;
+
+if (racerAge > 18 && racerOnTime === '1') {
+    (raceNumber += 1000);
+}
+
+if (racerAge > 18 && racerOnTime === '1') {
+    console.log(`Racing at 9:30, Runner:${raceNumber}`);
+} else if (racerAge > 18 && racerOnTime !== '1') {
+    console.log(`Racing at 11:00, Runner:${raceNumber}`);
+} else if (racerAge < 18) {
+    console.log(`Youth runner start at 12:30, Runner:${raceNumber}`);
+}
+
+
+// Parsity version
+
+const raceNumber1 = Math.floor(Math.random() * 1000)
+
+let earlyRegistration = false;
+let runnerAge = 33;
+
+if (runnerAge > 18 && earlyRegistration === true) {
+    raceNumber1 += 1000;
+}
+
+console.log(`Runner Age is ${runnerAge}`);
+console.log(`Runner on time: ${earlyRegistration}`);
+
+
+if (runnerAge > 18 && earlyRegistration === true) {
+    console.log (`You will race at 9:30am and with number ${raceNumber1}`);
+} else if (runnerAge > 18 && earlyRegistration === false) {
+    console.log(`You will race at 11:00am and with number ${raceNumber1}`);
+} else if (runnerAge < 18) {
+    console.log(`You will race at 12:30 and with number ${raceNumber1}`);
+}
